@@ -15,7 +15,7 @@
     * global
     * system
 
-*Setting for global level configuation*
+**Setting for global level configuation**
 
 ```
 git config --global --list
@@ -24,13 +24,13 @@ git config --gloabl user.email <email>
 git config --gloabl color.ui true (which is default after git version)
 ```
 
-*Git Alias*
+**Git Alias**
 
 ```
 git config --global alias.s "status -s"  #setting an alias for `git status`
 git config --global alias.lg "log --oneline --all --graph --decorate"
 ```
-*Creating a First Repo*
+**Creating a First Repo**
 
 ```
 git status
@@ -45,7 +45,7 @@ git commit -m "Added file"
 git status
 ```
 
-*Staging Area* 
+**Staging Area** 
 
 ```
 touch about.css about.html contact.css contact.html
@@ -53,7 +53,7 @@ git s
 git commit
 ```
 
-*Git Commit undoing*
+**Git Commit undoing**
 
 ```
 git reset --soft HEAD^
@@ -61,9 +61,9 @@ git commit --amend -m "Adasd"
 git reset --hard HEAD^
 git reset --hard HEAD^^
 ```
-*Note:* Don't do this after you push
+**Note:** Don't do this after you push
 
-*Git History*
+**Git History**
 
 ```
 git log
@@ -71,7 +71,7 @@ git log --oneline
 git lg
 ```
 
-*Git renaming,deleting*
+**Git renaming,deleting**
 
 ```
 cd web1
@@ -158,6 +158,7 @@ git checkout -b page_redesign
 ```
 
 Write some content in the file.
+
 ```
 notepad index.html
 "company logo"
@@ -176,7 +177,7 @@ git branch
 git lg
 ```
 
-* Conflit time
+*Conflit time*
 ```
 git branch
 git merge cart
@@ -186,14 +187,14 @@ git add .
 git status
 ```
 
-* To finish Merge*
+*To finish Merge*
 ```
 git commit 
 git lg
 git branch -d cart
 ```
 
-* Another example of merge conflict*
+*Another example of merge conflict*
 ```
 git checkout -b checkout_page
 notepad asd
@@ -215,7 +216,7 @@ git merge checkout_page
 notepad index.html
 ```
 
-* Resolve conflict
+*Resolve conflict*
 ```
 git status
 git add and commit
@@ -274,7 +275,7 @@ git cat-file -p 3b18 -> only show content
 git cat-file -p ff46 -> filename
 git cat-file -p c2d5 -> date and time
 ```
-* Benefits of Sha-1
+*Benefits of Sha-1*
 ```
 notepad 1.txt
 "hello world"
@@ -428,5 +429,6 @@ git reset --hard <sha1>
 
 **References**
 
-[Git Scm](https://github.com/progit/progit2/releases/download/2.1.56/progit.pdf)
-[Git Real](https://www.slideshare.net/CoutoLucas/git-real-slides) or [Drive](https://drive.google.com/drive/u/2/folders/0B5Vaq-RzahVnR0NIT0xMRDA2OFE)
+* [Git Scm](https://github.com/progit/progit2/releases/download/2.1.56/progit.pdf)
+
+* [Git Real](https://www.slideshare.net/CoutoLucas/git-real-slides) or [Git Real Drive](https://drive.google.com/drive/u/2/folders/0B5Vaq-RzahVnR0NIT0xMRDA2OFE)
